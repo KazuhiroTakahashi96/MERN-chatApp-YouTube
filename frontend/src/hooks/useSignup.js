@@ -24,7 +24,7 @@ const useSignup = () => {
     try {
       const res = await fetch("/api/auth/signup", {
         method: "POST",
-        headers: { "content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fullName,
           username,
